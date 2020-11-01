@@ -1,214 +1,678 @@
 /* Reset CSS */
-*{
-	margin:  0;
+
+* {
+	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
 	list-style: none;
+	text-decoration: none;
+	/*border: 1px solid red;*/
+}
+
+/*General orders*/
+h4 {
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+
+h3 {
+	font-size: 23px;
+	margin: 0 auto;
+}
+
+h5 {
+	font-size: 1rem;
+	padding: 40px 0px 15px 0px;
+}
+h6 {
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+.bold_€ {
+	font-weight: bold;
+}
+.fa-star{
+	color: #0065FC;
+}
+.far{
+	
+	color: #888888;
 }
 
 /*-----Header-----*/
-#logoReservia{
-	width: 120px;
-	height: 50px;
-	padding: 30px 0px 0px 45px;
-}
-header{
+
+header {
 	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;	
-}
-nav ul li{
-	display:  inline-block;
-	padding-right: 70px;
+	height: 23vh;
 }
 
+#logoReservia {
+	
+	height: 3rem;
+	padding: 1.25rem 6.875rem 1.25rem 1rem;
+}
+
+header>nav {
+	width: 99,99%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 0.9rem;
+}
+.nav1{
+	flex: 1;
+	padding-right: 1rem;
+	text-align: right;
+}
+.nav2{
+	flex: 1;
+    padding: 0rem 0.5rem 0.5rem 3rem;
+	border-bottom: 2px solid #F2F2F2;
+}
+.nav3{
+    flex: 1 5%;
+	padding: 0rem 0rem 0.5rem 3rem;
+	border-bottom: 2px solid #F2F2F2;
+}
 /*-----Section Search------*/
-#choice{
+.search {
+	top: 15px;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.title_search {
+	width: 90%;
+    margin: auto;
+}
+
+.choice {
+	font-size: 0.9rem;
+	font-weight: 400;
 	padding: 15px 0;
-	font-size: 14px;
-	font-weight: 400; 
+	width: 90%;
+    margin: auto;
 }
 
 /*Search bar (LogoLocation,text,Search)*/
-#search{
-	position: relative;
-	top: 15px;
-	left: 45px;
+.search_bar{
+	width: 90%;
+	margin: 0.5rem auto;
+	padding: 10px 0;
 }
-label{
+label {
 	background-color: #F2F2F2;
-	padding: 11.5px 16px;
-	margin: -1px;
+	padding: 1.02rem 1.2rem;
 	outline: none;
-	border-radius:  10px 0 0 10px;
+	border-radius: 18px 0 0 18px;
 	border-color: #F2F2F2;
+	font-size: 0.9rem;
 }
-#locLogo{
-	background-color:#F2F2F2;
+
+#locLogo {
+	background-color: #F2F2F2;
 	padding: 0;
 	margin: 0;
 }
-input[type="text"]{
-	padding: 11.2px 12px;
+
+input[type="text"] {
+	padding: 0.96rem;
 	margin: -4px;
-	outline:  0;
-	border: 1px solid #F2F2F2 ;
+	outline: 0;
+	border: 1px solid #F2F2F2;
 	font-weight: bold;
+	font-size: 0.9rem;
 }
-::-webkit-input-placeholder{
+
+::-webkit-input-placeholder,::-moz-placeholder,::-moz-placeholder ::-ms-input-placeholder {
 	color: black;
 }
-::-moz-placeholder{
-	color: black;
-}
-::-moz-placeholder{
-	color: black;
-}
-::-ms-input-placeholder{
-	color: black;
-}
-input[type="submit"]{
+
+.icon_rechercher {
 	background-color: #0065FC;
-	padding: 12px;
+	padding: 1rem 1.1rem;
+	border-radius: 18px;
+	margin: -30px;
+	color: #FFF;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	font-size: 1rem;
+
+}
+
+.button_rechercher {
+	background-color: #0065FC;
+	padding: 1.08rem 1.4rem 1.1rem 1.4rem;
 	border-radius: 0 10px 10px 0;
 	margin: -1px;
 	color: #FFF;
 	border: none;
 	outline: 0;
 	cursor: pointer;
+	font-size: 0.9rem;
+	font-weight: 600;
+	display: none;
 }
-input[type="submit"]:hover{
-		background-color: rgb(115, 141, 211);
+
+input[type="submit"] :hover {
+	opacity: 0.7;
 }
 
 /*Filters(economic, family, romantic, pets)*/
-#title_filter{
-	display: inline-block;
-	padding-top: 45px;
+
+.filter{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 0.5rem;
+}
+.filter>h4{
+	margin-bottom: 0.5rem;
 }
 
-filter{
+filter {
 	display: inline-block;
-	padding: 13px 20px 12px 58px; 
-	margin-right: 12px;
-	border: 1px solid #F2F2F2 ;
+	padding: 0rem 1rem 0rem 0.7rem;
+	margin: 0.5rem 0.2rem 0.3rem 0.1rem;
+	border: 2.5px solid #F2F2F2;
 	border-radius: 50px 50px 50px 50px;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 0.8rem;
 }
-filter:hover{
+
+filter::before {
+	align-items: center;
+	background-color: rgb(8, 203, 238);
+	border-radius: 50%;
+	display: inline-flex;
+	height: 2.05rem;
+	justify-content: center;
+	margin: 0 0.7rem 0 -1rem;
+	width: 2.05rem;
+	font-family: "Font Awesome 5 Free";
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+filter:hover {
 	background-color: rgba(50, 139, 219, .15);
 	cursor: pointer;
 }
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-	background-color: rgb(199, 234, 240);
-	padding: 13px 14px;
-	margin: 0 -45px 0 5px;
-	border-radius: 50%;
-}
+
 /*Modification of logos Awesome */
-#ecoLogo{
-	padding: 13px 10px;
+
+
+.ecoLogo::before {
+	content: "\f53a";
+	padding: 0.4rem;
 	color: blue;
 }
-#familyLogo{
-	padding: 13px 14px; 
+
+.familyLogo::before {
+	content: "\f1ae";
+	padding: 0.4rem;
 	color: blue;
 }
-#romanticLogo{
-	padding: 13px 12px;
+
+.romanticLogo::before {
+	content: "\f004";
+	padding: 0.4rem;
 	color: blue;
 }
-#petsLogo{
-	padding: 13px 11px;
+
+.petsLogo::before {
+	content: "\f6d3";
+	padding: 0.4rem;
 	color: blue;
 }
+
 /*Part information*/
-#container_info{
-	margin-top: 35px;
+
+info {
+	display: flex;
+	align-items: flex-start;
+	margin: 2rem 0;
+	width: 100%;
 }
-.fa-info-circle{
+.fa-info-circle {
 	color: white;
 	background-color: blue;
 	border: 1px solid #F2F2F2;
 	border-radius: 50%;
-}
-#description_info{
-	display: inline-block;
-	font-weight: 300;
-	font-size: 12px;
-	padding-bottom: 45px;
+	margin-right: 7px;
 }
 
-	/*-----Section Accommodations-----*/
-#accommodations{
-		margin: 0 auto;
-		padding-left: 45px;
+.description_info {
+	display: inline-block;
+	font-weight: 300;
+	font-size: 14px;
+	margin: 0;
 }
-/*Part accommodations*/
-#accommodations_Marseille{
-	background-color: #f2f2f2;
-	border-radius: 15px;
-	padding: 0 40px 15px 40px;
-	height: 600px;
-	width: 55%;
-	float: left;
+
+/*-----Section Accommodations-----*/
+
+
+/*Part more popular*/
+#chartLogo {
+	
 }
-.h4_accommodations{
-	padding: 35px 0 20px 0;
-	font-weight: 800;
+#accomodations{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
 }
-#img_accommodation{
-	height: 117px;
-	width: 200px;
-	padding: 5px 5px 70px 5px;
+.lesPlusPopulaires{
+	display: block;
+	width: 100%;
+	padding-bottom: 2rem;
+	background-color: #F2F2F2;
+}
+
+.lesPlusPopulaires > h4{
+	padding: 2rem 0;
+	width: 85%;
+	margin: auto;
+}
+.lesPlusPopulaires > h4::after{
+	content:"\f201";
+}
+.lesPlusPopulaires figure{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+.lesPlusPopulaires a{
+	width: 100%;
+	height: 15vh;
+	margin: 0;
+	padding: 5px 0 5px 5px 5px;
+	border-radius: 1rem 0 0 1rem;
+}
+.img_popular{
+	width: 40%;
+	height: 20vh;
+	padding: 5px 0px 5px 5px;
+	border-radius: 1rem 0 0 1rem;
+	object-fit: cover;
+}
+
+.lesPlusPopulaires figure h6, p, note{
+	width: 90%;
+	margin: 0.9rem 0 0.5rem 0.5rem ;
+}
+.lesPlusPopulaires figure figcation note{
+	display: block;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+}
+.lesPlusPopulaires figure{
+	background-color: #FFF;
+	border-radius: 1rem;
+}
+
+/*Part Accommodations in Marseille*/
+
+.h6_accommodation {
+	margin: -5rem 0 0.7rem 1rem;
+}
+.price_accomodation {
+	font-size: 0.9rem;
+	margin: 0.5rem 0 1rem 1rem;
+}
+.accommodations_Marseille > h4{
+	padding: 1.5rem 0;
+	width: 87%;
+	margin: auto;
+}
+.accommodations_Marseille figure figcation note{
+	display: block;
+	margin-top: -0.5rem;
+	margin-left: 1rem;
+	font-size: 0.8rem;
+}
+.accommodations_Marseille figure{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+.img_accommodation {
+	height: 20vh;
+	width: 97%;
+	padding: 5px 5px 80px 5px;
 	background-color: #FFF;
 	border-radius: 25px;
-	margin: 0 0 -75px 0;
+	box-shadow: 0px 0px 10px #dadada;
+	object-fit: cover;
 }
-#accommodations_images{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 30px;
-	grid-row-gap: 40px;
-}
-#link_1{
+.link_AfficherPlus {
 	text-decoration: none;
-	font-weight: bold;
-	color: black;
+	font-weight: 800;
+	display: block;
+	width: 90%;
+    margin: auto;
+
 }
-/*Part popular*/
-#most_popular{
-	background-color: #f2f2f2;
-	border-radius: 15px;
-	margin-left: 40px;
-	padding: 0 10px;
-	height: 600px;
-	width: 25%;
-	float: left;
+
+/*-----Section Activities-----*/
+
+/*Part Activities in Marseille*/
+
+.h4_activities {
+	padding: 50px 0 20px 20px;
+	font-weight: 800;
+	width: 95%;
+	margin: auto
+
 }
-#img_popular{
-	height: 59px;
-	width: 100px;
-	padding: 5px 70px 5px 5px;
-	background-color: #FFF;
-	border-radius: 25px;
-	margin: 0 10px 25px 0;
+.h6_activities {
+	padding: 0 1rem;
+	font-size: 0.9rem;
+	margin-top: -2.6rem;
 }
-#popular_images{
+.activities_ul {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 30px;
+	grid-template-rows: 1fr;
+	grid-gap: 40px;
+	margin-bottom: 65px;
+	margin: 0 auto;
 }
-.li_acc{
-	height: 59px;
-	width: 100px;
-	padding: 30px 0;
+.activities_ul li{
+	width: 90%;
+	margin: auto;
+}
+.img_activities {
+	height: 22vh;
+	width: 97%;
+	padding: 5px 5px 55px 5px;
 	background-color: #FFF;
 	border-radius: 25px;
-	margin: 0 10px 25px 0;
-	text-align: 10px;
+	box-shadow: 0px 0px 10px #dadada;
+	object-fit: cover;
+}
+
+/*--------Footer----------*/
+
+footer {
+	background-color: #F2F2F2;
+	width: 100%;
+	height: 85vh;
+	margin-top: 60px;
+	text-decoration: none;
+}
+footer section{
+	width: 88%;
+	margin: auto;
+}
+footer section ul li{
+	padding: 5px 0px;
+	font-weight: 500;
+}
+footer section ul li a:hover {
+	color: rgb(172, 124, 124);
+}
+
+/*--------MEDIA QUERIES-------- */
+
+@media screen and (min-width: 350px) and (max-width: 460px){
+	.img_accommodation {
+		height: 27vh;
+	}
+	.img_activities {
+		height: 30vh;
+	}
+
+}
+
+@media screen and (min-width: 461px) and (max-width: 509px){
+	#logoReservia{
+		padding: 1.25rem 2.8rem 1.25rem 0rem;
+	}
+	header {
+		height: 16vh;
+	}
+	header>nav {
+		width: 90%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.nav1{
+		order: 1;
+		flex: 0 0%;
+		padding-left: 0;
+		margin-right: 0;
+	}
+	.nav2, .nav3{
+		flex: 0;
+		padding: 0;
+		border-bottom: none;
+		margin-right: 0;
+	}
+	.icon_rechercher {
+		display: none;
+	}
+	.button_rechercher {
+		display: inline-block;
+	}
+
+	.img_accommodation {
+		height: 33vh;
+	}
+	.img_activities {
+		height: 30vh;
+	}
+	footer{
+		height: 90vh;
+	}
+}
+
+@media screen and (min-width: 510px) and (max-width: 739px){
+	#logoReservia{
+		padding: 1.25rem 2.8rem 1.25rem 0rem;
+	}
+	header {
+		height: 16vh;
+	}
+	header>nav {
+		width: 90%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.nav1{
+		order: 1;
+		flex: 0 0%;
+		padding-left: 0;
+		margin-right: 0;
+	}
+	.nav2, .nav3{
+		flex: 0;
+		padding: 0;
+		border-bottom: none;
+		margin-right: 0;
+	}
+	.icon_rechercher {
+		display: none;
+	}
+	.button_rechercher {
+		display: inline-block;
+	}
+	.img_popular {
+		height: 25vh;
+	}
+	.img_accommodation {
+		height: 45vh;
+	}
+	.img_activities {
+		height: 46vh;
+	}
+	footer{
+		height: 90vh;
+	}
+}
+@media screen and (min-width: 740px) and (max-width: 1024px){
+	#logoReservia{
+		padding: 1.25rem 14.5rem 1.25rem 0rem;
+	}
+	header {
+		height: 17vh;
+	}
+	header>nav {
+		width: 90%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.nav1{
+		order: 1;
+		flex: 0 0%;
+		padding-left: 0;
+		margin-right: 0;
+	}
+	.nav2, .nav3{
+		flex: 0;
+		padding: 0;
+		border-bottom: none;
+		margin-right: 0;
+	}
+	.icon_rechercher{
+		display: none;
+	}
+	.button_rechercher {
+		display: inline-block;
+	}
+	#accommodations{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		width: 90%;
+		margin: auto;
+	}
+	.accommodations_Marseille{
+		width: 58%;
+		background-color: #F2F2F2;
+		border-radius: 20px 20px 20px 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.img_accommodation {
+		height: 15vh;
+	}
+	.accommodations_Marseille figure {
+		width: 46%;
+	}
+	.lesPlusPopulaires > h4 {
+		padding: 2rem 0 5rem 0;
+	}
+	.lesPlusPopulaires {
+		width: 40%;
+		border-radius: 20px 20px 20px 20px;
+	}
+	.img_popular {
+		width: 45%;
+		height: 20vh;
+	}
+	.lesPlusPopulaires figure h6, p, note {
+		margin: 0.2rem 0 0.5rem 0.5rem;
+	}
+	.img_activities {
+		height: 30vh;
+	}
+	.link_AfficherPlus {
+		padding: 1.5rem 0;
+	}
+	.Activities_Marseille{
+		width: 90%;
+		margin: auto;
+	}
+	.activities_ul{
+		grid-template-columns: 1fr 1fr;
+	}
+	footer{
+		height: 90vh;
+	}
+	twoImages{
+		display: inline;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	#logoReservia{
+		padding: 1.25rem 30rem 1.25rem 0rem;
+	}
+	header {
+		height: 17vh;
+	}
+	header>nav {
+		width: 90%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.nav1{
+		order: 1;
+		flex: 0 0%;
+		padding-left: 0;
+		margin-right: 0;
+	}
+	.nav2, .nav3{
+		flex: 0;
+		padding: 0;
+		border-bottom: none;
+		margin-right: 0;
+	}
+	.icon_rechercher{
+		display: none;
+	}
+	.button_rechercher {
+		display: inline-block;
+	}
+	#accommodations{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		width: 90%;
+		margin: auto;
+	}
+	.accommodations_Marseille{
+		width: 65%;
+		background-color: #F2F2F2;
+		border-radius: 20px 20px 20px 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.accommodations_Marseille{
+		width: 65%;
+	}
+	.img_accommodation {
+		height: 15vh;
+	}
+	.accommodations_Marseille figure {
+		width: 30%;
+	}
+	.lesPlusPopulaires {
+		width: 32%;
+		border-radius: 20px 20px 20px 20px;
+	}
+	.img_popular {
+		width: 34%;
+		height: 17vh;
+	}
+	.lesPlusPopulaires figure h6, p, note {
+		margin: 0.2rem 0 0.5rem 0.5rem;
+	}
+	.link_AfficherPlus {
+		padding: 1.5rem 0;
+	}
+	.Activities_Marseille{
+		width: 90%;
+		margin: auto;
+	}
+	.activities_ul{
+		display: ;
+	}
+	Activities_Marseille
+	footer{
+		height: 90vh;
+	}
 
 }
