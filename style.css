@@ -41,9 +41,7 @@ h6 {
 img{
 	object-fit: cover;
 }
-figure:hover{
-	box-shadow: 5px 5px 5px #888888 ;
-}
+
 /*----------------------------Header---------------------*/
 
 header {
@@ -179,7 +177,7 @@ input[type="text"] {
 	display: none;
 }
 
-input[type="submit"] :hover {
+button[type="submit"]:hover {
 	opacity: 0.7;
 }
 
@@ -194,8 +192,9 @@ input[type="submit"] :hover {
 	margin-bottom: 0.5rem;
 }
 
-filter {
+.filter aside{
 	display: inline-block;
+	width: auto;
 	padding: 0rem 1rem 0rem 0.7rem;
 	margin: 0.5rem 0.2rem 0.3rem 0.1rem;
 	border: 2.5px solid #F2F2F2;
@@ -204,7 +203,7 @@ filter {
 	font-size: 0.8rem;
 }
 
-filter::before {
+.filter aside::before {
 	align-items: center;
 	background-color: rgb(8, 203, 238);
 	border-radius: 50%;
@@ -218,7 +217,7 @@ filter::before {
 	font-weight: 900;
 }
 
-filter:hover {
+.filter aside:hover {
 	background-color: rgba(50, 139, 219, .15);
 	cursor: pointer;
 }
@@ -252,12 +251,13 @@ filter:hover {
 
 /*-----------------------Part information----------------------*/
 
-info {
-	display: flex;
-	align-items: flex-start;
+.filter p {
 	margin: 2rem 0;
 	width: 100%;
+	font-weight: 300;
+	font-size: 1rem;
 }
+
 .fa-info-circle {
 	color: white;
 	background-color: blue;
@@ -266,12 +266,6 @@ info {
 	margin-right: 7px;
 }
 
-.description_info {
-	display: inline-block;
-	font-weight: 300;
-	font-size: 14px;
-	margin: 0;
-}
 
 
 /*----------------------Part more popular--------------------*/
@@ -317,29 +311,35 @@ info {
 	border-radius: 1rem 0 0 1rem;
 }
 
-.lesPlusPopulaires figure h6, p, note{
+.lesPlusPopulaires figure h6, p, aside{
 	width: 90%;
-	margin: 0.9rem 0 0.5rem 0.5rem ;
+	padding: 0.5rem;
 }
-.lesPlusPopulaires figure figcation note{
+
+.lesPlusPopulaires figure figcation aside{
 	display: block;
 	margin-top: 1rem;
 	font-size: 0.8rem;
+	margin: -0.9rem 0.5rem 0.5rem ;
+
 }
 .lesPlusPopulaires figure{
 	background-color: #FFF;
 	border-radius: 1rem;
 	cursor: pointer;
 }
+.lesPlusPopulaires figure:hover{
+	box-shadow: 5px 5px 5px #888888 ;
+}
 
 /*----------------Part Accommodations in Marseille-------------------*/
 
 .h6_accommodation {
-	margin: -5rem 0 0.7rem 1rem;
+	margin: -5rem 0 0rem 1rem;
 }
 .price_accomodation {
 	font-size: 0.9rem;
-	margin: 0.5rem 0 1rem 1rem;
+	margin-left: 0.5rem;
 }
 .accommodations_Marseille > h4{
 	padding: 1.5rem 0;
@@ -347,11 +347,11 @@ info {
 	margin: auto;
 }
 
-.accommodations_Marseille figure figcaption note{
+.accommodations_Marseille figure figcaption aside{
 	display: block;
 	margin-top: -0.5rem;
-	margin-left: 1rem;
-	font-size: 0.8rem;
+	margin-left: 0.5rem;
+	font-size: 1rem;
 }
 .accommodations_Marseille figure{
 	width: 90%;
@@ -374,7 +374,9 @@ info {
 	display: block;
 	width: 90%;
     margin: auto;
-
+}
+.accommodations_Marseille img:hover{
+	box-shadow: 5px 5px 5px #888888;
 }
 
 /*--------------------Section Activities---------------*/
@@ -566,6 +568,9 @@ footer section ul li a:hover {
 		width: 90%;
 		margin: auto;
 	}
+	.price_accomodation {
+		padding-bottom: 1rem;
+	}
 	.accommodations_Marseille{
 		width: 58%;
 		background-color: #F2F2F2;
@@ -582,18 +587,23 @@ footer section ul li a:hover {
 	.lesPlusPopulaires > h4 {
 		padding: 2rem 0 5rem 0;
 	}
+	.h6_accommodation {
+		margin: -5rem 0 0rem 0.8rem;
+	}
 	.lesPlusPopulaires {
 		width: 40%;
 		border-radius: 20px 20px 20px 20px;
 	}
 	.img_popular {
 		width: 45%;
-		height: 21vh;
+		height: 19vh;
 	}
-	.lesPlusPopulaires figure h6, p, note {
-		margin: 0.2rem 0 0.5rem 0.5rem;
+	.lesPlusPopulaires figure{
+		height: 20.5vh; 
 	}
-	
+	.lesPlusPopulaires figure h6, p, aside {
+		padding: 0.3rem;
+	}
 	.link_AfficherPlus {
 		padding: 1.5rem 0;
 	}
@@ -619,13 +629,13 @@ footer section ul li a:hover {
 		height: 28vh;
 	}
 	.frioul{
-		height: 20vh;
+		height: 22vh;
 	}
 	.frioul img{
 		height: 12vh;
 	}
 	.dame, .longchamp{
-		height: 28vh;
+		height: 28.8vh;
 	}
 	.dame img, .longchamp img{
 		height: 20vh;
@@ -669,7 +679,6 @@ footer section ul li a:hover {
 		flex: 0;
 		padding: 32px 15px;
 		border-bottom: none;
-		
 	}
 	.nav1:hover, .nav2:hover, .nav3:hover{
 		border-bottom: none;
@@ -716,8 +725,9 @@ footer section ul li a:hover {
 		width: 34%;
 		height: 17vh;
 	}
-	.lesPlusPopulaires figure h6, p, note {
+	.lesPlusPopulaires figure h6, p, aside {
 		margin: 0.2rem 0 0.5rem 0.5rem;
+		padding: 0.3rem;
 	}
 	.link_AfficherPlus {
 		padding: 1.5rem 0;
@@ -769,13 +779,11 @@ footer section ul li a:hover {
 		height: 35vh;
 	}
 	footer section {
-		margin: 1rem 0rem 0rem 3.8rem;
+		margin: 1rem 0rem 0rem 5rem;
 		width: 27%;
 	}
 	footer section > * {
-		padding: 1rem 0;
-	   
+		padding: 1rem 0;   
 	}
 }
-	
 
