@@ -192,7 +192,7 @@ button[type="submit"]:hover {
 	margin-bottom: 0.5rem;
 }
 
-.filter aside{
+.filter div{
 	display: inline-block;
 	width: auto;
 	padding: 0rem 1rem 0rem 0.7rem;
@@ -203,9 +203,9 @@ button[type="submit"]:hover {
 	font-size: 0.8rem;
 }
 
-.filter aside::before {
+.filter div::before {
 	align-items: center;
-	background-color: rgb(8, 203, 238);
+	background-color: rgb(186, 212, 250);
 	border-radius: 50%;
 	display: inline-flex;
 	height: 2.05rem;
@@ -217,7 +217,7 @@ button[type="submit"]:hover {
 	font-weight: 900;
 }
 
-.filter aside:hover {
+.filter div:hover {
 	background-color: rgba(50, 139, 219, .15);
 	cursor: pointer;
 }
@@ -297,6 +297,9 @@ button[type="submit"]:hover {
 	margin: auto;
 	margin-bottom: 1rem;
 }
+.lesPlusPopulaires div{
+	margin: 0.9rem 0 0 0.5rem;
+}
 .lesPlusPopulaires a{
 	width: 100%;
 	height: 15vh;
@@ -311,12 +314,12 @@ button[type="submit"]:hover {
 	border-radius: 1rem 0 0 1rem;
 }
 
-.lesPlusPopulaires figure h6, p, aside{
+.lesPlusPopulaires figure h6, p{
 	width: 90%;
 	padding: 0.5rem;
 }
 
-.lesPlusPopulaires figure figcation aside{
+.lesPlusPopulaires figure figcation {
 	display: block;
 	margin-top: 1rem;
 	font-size: 0.8rem;
@@ -335,7 +338,7 @@ button[type="submit"]:hover {
 /*----------------Part Accommodations in Marseille-------------------*/
 
 .h6_accommodation {
-	margin: -5rem 0 0rem 1rem;
+	margin: -5rem 0 0rem 0.7rem;
 }
 .price_accomodation {
 	font-size: 0.9rem;
@@ -346,8 +349,12 @@ button[type="submit"]:hover {
 	width: 96%;
 	margin: auto;
 }
+.accommodations_Marseille div{
+	width: 90%;
+	margin: auto;
+}
 
-.accommodations_Marseille figure figcaption aside{
+.accommodations_Marseille figure figcaption{
 	display: block;
 	margin-top: -0.5rem;
 	margin-left: 0.5rem;
@@ -596,10 +603,10 @@ footer section ul li a:hover {
 	}
 	.img_popular {
 		width: 45%;
-		height: 19vh;
+		height: 23vh;
 	}
 	.lesPlusPopulaires figure{
-		height: 20.5vh; 
+		height: 25vh; 
 	}
 	.lesPlusPopulaires figure h6, p, aside {
 		padding: 0.3rem;
@@ -715,7 +722,7 @@ footer section ul li a:hover {
 		height: 15vh;
 	}
 	.accommodations_Marseille figure {
-		width: 30%;
+		width: 31%;
 	}
 	.lesPlusPopulaires {
 		width: 32%;
@@ -723,7 +730,7 @@ footer section ul li a:hover {
 	}
 	.img_popular {
 		width: 34%;
-		height: 17vh;
+		height: 20vh;
 	}
 	.lesPlusPopulaires figure h6, p, aside {
 		margin: 0.2rem 0 0.5rem 0.5rem;
