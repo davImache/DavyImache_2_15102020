@@ -6,7 +6,7 @@
 	font-family: 'Raleway', sans-serif;
 	list-style: none;
 	text-decoration: none;
-	
+	color: black;
 }
 
 /*-------------------General orders------------------*/
@@ -298,7 +298,8 @@ button[type="submit"]:hover {
 	margin-bottom: 1rem;
 }
 .lesPlusPopulaires div{
-	margin: 0.9rem 0 0 0.5rem;
+	width: 86%;
+    margin: auto;
 }
 .lesPlusPopulaires a{
 	width: 100%;
@@ -434,6 +435,9 @@ footer {
 footer section{
 	width: 88%;
 	margin: auto;
+}
+footer ul li a{
+	color: none;
 }
 footer section ul li{
 	padding: 5px 0px;
@@ -589,7 +593,7 @@ footer section ul li a:hover {
 		height: 10vh;
 	}
 	.accommodations_Marseille figure {
-		width: 46%;
+		width: 47%;
 	}
 	.lesPlusPopulaires > h4 {
 		padding: 2rem 0 5rem 0;
@@ -610,6 +614,9 @@ footer section ul li a:hover {
 	}
 	.lesPlusPopulaires figure h6, p, aside {
 		padding: 0.3rem;
+	}
+	.lesPlusPopulaires div {
+		width: 95%;
 	}
 	.link_AfficherPlus {
 		padding: 1.5rem 0;
@@ -730,7 +737,7 @@ footer section ul li a:hover {
 	}
 	.img_popular {
 		width: 34%;
-		height: 20vh;
+		height: 22vh;
 	}
 	.lesPlusPopulaires figure h6, p, aside {
 		margin: 0.2rem 0 0.5rem 0.5rem;
